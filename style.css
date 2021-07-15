@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=EB+Garamond:wght@465&family=Tourney:wght@600&display=swap');
+
+*{
+	margin: 0% 1%;
+	padding: 1% 0%;
+}
+body{
+		background : rgb(5, 20, 48);
+}
+
+/* Header */
+#Required{
+	padding: 1%; display: flex; 
+	justify-content: space-around; 
+	align-items: center; 
+	background-color: #16213E; 
+	border-radius:  20px; 
+	flex-direction: column; 
+	flex-wrap: wrap;
+	color: rgb(224, 18, 18);
+	font-size: 1.2rem;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+button{
+	background-color: transparent;
+	border-color: transparent;
+	font-size: 1rem;
+	font-family: 'Courier Prime', monospace;
+	color: honeydew;
+	font-weight: 400;
+	border: none;
+	padding: 0.5% 1%;
+	border-radius: 30px;
+	text-align: center;
+}
+.f1{
+	text-decoration: none;
+	color: honeydew;
+	border-bottom: 1px groove goldenrod;
+}
+button:hover{
+	background-image: linear-gradient(gray, silver);
+}
+.f1:hover{
+	color: rgb(12, 116, 12);
+	border-bottom: transparent;
+	font-weight: bold;
+}
+
+/* Content */
+#CGPA{
+	height: fit-content;
+	padding: 2%;
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	background-color: #16213E;
+	border-radius: 20px;
+}
+/* Name */
+.font1{
+	font-family: 'EB Garamond', serif;
+	font-size: 2.5rem;
+	font-weight: 400;
+	text-align: left;
+	color: rgb(211, 132, 13);
+	border-left: 3px double gray;
+	padding: 1%;
+	height: fit-content;
+}
+/* Form */
+.Me{
+	background-color: rgb(21, 44, 78);
+	width: 50rem;
+	height: fit-content;
+	border-radius: 20px;
+	border: 1px solid #142655;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 1%;
+}
+form{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+}
+.form_font{
+	background-color: rgb(21, 44, 78);
+	border: 0px;
+	border-bottom: 1.5px groove silver;
+	font-size: 1.3rem;
+	color: whitesmoke;
+	font-family: 'Courier Prime', monospace;
+}
+.form_font::placeholder{
+	color: rgb(231, 225, 225);
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 1rem;
+}
+.form_font:focus{
+	outline: none;
+}
+
+/* Result */
+.Show{
+	height: fit-content;
+	background-color: #16213E;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.Show_SGPA{
+	background-color: #16213E;
+	border: none;
+	border-radius: 30px;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 1.5rem;
+	color: chocolate;
+	padding: 0.5% 1%;
+	text-decoration: solid underline;
+}
+.Show .Show_SGPA:hover{
+	text-decoration: solid;
+	background-color: rgb(196, 160, 1);
+	font-weight: bold;
+	color: white;
+}
+#Show_Data{
+	padding: 1%;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+	font-family: 'Tourney', cursive;
+	color: tomato;
+}
+
+@media only screen and (max-width: 649px){
+	.Me{
+		flex-direction: column;
+	}
+	.font1{
+		font-size: 2rem;
+	}
+	.Show_SGPA{
+		font-size: 1.25rem;
+	}
+	#Show_Data{
+		font-size: 1.5rem;
+	}
+	form{
+		margin-bottom: 2vh;
+	}
+}
+@media only screen and (max-width: 1200px){
+	.font1{
+		margin-bottom: 4vh;
+	}
+}
+@media only screen and (max-width: 734px){
+	#Required{
+		text-align: center;
+	}
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGPA Calculator</title>
+	<link rel = "stylesheet" href = "style.css" >
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ05K3sMjDQJOSrYg36Ude3N3O4xXroDAu9x4Y-dzizria1mXc0aiTxJqyE_P1NO0Q3ozA&usqp=CAU">
+    <script type="text/javascript" src = "Calculator.js" ></script>
+    <script src="https://kit.fontawesome.com/187a3519f6.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Uchen&display=swap');
+    </style>
+</head>
+<body>
+    <div id="Required">
+        <h3>Enter points equivalent to grades.</h3>
+        <h4>If your grade is AA then enter 10, like that. &nbsp;"Enter 0 instead of leaving empty"</h4>
+        <button><a href="Gradeset.html" target="_blank" class="f1">View&nbsp;Gradeset</a></button>
+    </div>
+    <br/>
+    <div id="CGPA">
+        <div class="font1">
+            Student<br/> 
+            SGPA<br/> 
+            Calculator..!
+        </div>
+        <div class="Me">
+            <span>
+                <h2 style="padding: 5%; color: rgb(13, 211, 102); text-align: center;">Enter Points</h2>
+                <form name="Points" method = "POST" action = "send.php">
+                    <input type = "decimal" id="1_sp" placeholder = "1st subject" maxlength="2" class="form_font"/><br/>
+                    <input type = "decimal" id="2_sp" placeholder = "2nd subject" maxlength="2" class="form_font"/><br/>
+                    <input type = "decimal" id="3_sp" placeholder = "3rd subject" maxlength="2" class="form_font"/><br/>
+                    <input type = "decimal" id="4_sp" placeholder = "4th subject" maxlength="2" class="form_font"/><br/>
+                    <input type = "decimal" id="5_sp" placeholder = "5th subject" maxlength="2" class="form_font"/><br/>
+                    <input type = "decimal" id="6_sp" placeholder = "6th subject" maxlength="2" class="form_font"/><br/>
+                    <input type = "decimal" id="7_sp" placeholder = "7th subject" maxlength="2" class="form_font"/><br/>
+                    <input type = "decimal" id="8_sp" placeholder = "8th subject" maxlength="2" class="form_font"/><br/>
+                    <input type = "decimal" id="9_sp" placeholder = "9th subject" maxlength="2" class="form_font"/><br/>
+                    <input type = "decimal" id="10_sp" placeholder = "10th subject" maxlength="2" class="form_font"/><br/>
+                </form>
+            </span>
+            <span>
+                <h2 style="padding: 5%; color: rgb(13, 211, 102); text-align: center;">Enter Credits</h2>
+                <form>
+                    <input type = "decimal" id="1_sc" placeholder = "1st subject" maxlength="2" class="form_font"/><br/>
+                    <input type = "decimal" id="2_sc" placeholder = "2nd subject" maxlength="2" class="form_font"/><br/>
+                    <input type = "decimal" id="3_sc" placeholder = "3rd subject" maxlength="2" class="form_font"/><br/>
+                    <input type = "decimal" id="4_sc" placeholder = "4th subject" maxlength="2" class="form_font"/><br/>
+                    <input type = "decimal" id="5_sc" placeholder = "5th subject" maxlength="2" class="form_font"/><br/>
+                    <input type = "decimal" id="6_sc" placeholder = "6th subject" maxlength="2" class="form_font"/><br/>
+                    <input type = "decimal" id="7_sc" placeholder = "7th subject" maxlength="2" class="form_font"/><br/>
+                    <input type = "decimal" id="8_sc" placeholder = "8th subject" maxlength="2" class="form_font"/><br/>
+                    <input type = "decimal" id="9_sc" placeholder = "9th subject" maxlength="2" class="form_font"/><br/>
+                    <input type = "decimal" id="10_sc" placeholder = "10th subject" maxlength="2" class="form_font"/><br/>
+                </form>
+            </span>
+        </div>
+    </div>
+    <br/>
+    <div class="Show">
+        <input type="button" value="Show&nbsp;SGPA" class="Show_SGPA" onclick="Calculate()" />
+        <p id="Show_Data"></p>
+    </div>
+</body>
+</html>
