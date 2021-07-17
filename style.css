@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=EB+Garamond:wght@465&family=Tourney:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Uchen&display=swap');
 *{
-	margin: 0% 1%;
-	padding: 1% 0%;
+	margin: 0% 1% 0% 1%;
+	padding: 1% 0% 1% 0%;
 }
 body{
 		background : rgb(5, 20, 48);
@@ -17,7 +17,7 @@ body{
 	border-radius:  20px; 
 	flex-direction: column; 
 	flex-wrap: wrap;
-	color: rgb(224, 18, 18);
+	color: rgb(196, 28, 28);
 	font-size: 1.2rem;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -105,6 +105,43 @@ form{
 	outline: none;
 }
 
+/* CGPA */
+#CG{
+	background-color: #16213E;
+	border-radius: 20px;
+	padding: 1%;
+	height: fit-content;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	align-items: center;
+}
+#CG form{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	border: none;
+}
+.form_font2{
+	background-color: #16213E;
+	border: none;
+	border-bottom: 1.5px groove silver;
+	font-size: 1.3rem;
+	color: whitesmoke;
+	font-family: 'Courier Prime', monospace;
+}
+.form_font2::placeholder{
+	color: rgb(231, 225, 225);
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 1rem;
+}
+.form_font2:focus{
+	outline: none;
+}
+
+
 /* Result */
 .Show{
 	height: fit-content;
@@ -115,7 +152,7 @@ form{
 	justify-content: space-around;
 	align-items: center;
 }
-.Show_SGPA{
+.Show_CGPA{
 	background-color: #16213E;
 	border: none;
 	border-radius: 30px;
@@ -123,9 +160,10 @@ form{
 	font-size: 1.5rem;
 	color: chocolate;
 	padding: 0.5% 1%;
-	text-decoration: solid underline;
+	text-decoration: solid;
+	font-weight: bold;
 }
-.Show .Show_SGPA:hover{
+.Show .Show_CGPA:hover{
 	text-decoration: solid;
 	background-color: rgb(196, 160, 1);
 	font-weight: bold;
@@ -147,7 +185,7 @@ form{
 	.font1{
 		font-size: 2rem;
 	}
-	.Show_SGPA{
+	.Show_CGPA{
 		font-size: 1.25rem;
 	}
 	#Show_Data{
@@ -159,7 +197,8 @@ form{
 }
 @media only screen and (max-width: 1200px){
 	.font1{
-		margin-bottom: 4vh;
+		margin-bottom: 3vh;
+		margin-top: 1.5vh;
 	}
 }
 @media only screen and (max-width: 734px){
