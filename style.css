@@ -69,6 +69,18 @@ button:hover{
 	border-left: 3px double gray;
 	padding: 1%;
 	height: fit-content;
+	animation: title 1.5s ease-in-out 1ms infinite;
+}
+@keyframes title {
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.2);
+	}
+	100%{
+		transform: scale(1);
+	}
 }
 /* Form */
 .Me{
